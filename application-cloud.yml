@@ -15,7 +15,7 @@ management:
   metrics:
     export:
       wavefront:
-        uri: ${vcap.services.wavefront.credentials.hostname}:${vcap.services.wavefront.credentials.port}
+        uri: proxy://${vcap.services.wavefront.credentials.hostname}:${vcap.services.wavefront.credentials.port}
         #api-token: ${vcap.services.wavefront.credentials.api-token}
 
 wavefront:
