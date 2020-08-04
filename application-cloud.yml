@@ -15,10 +15,10 @@ management:
   metrics:
     export:
       wavefront:
-        uri: http://${vcap.services.wavefront.credentials.hostname}:${vcap.services.wavefront.credentials.port}
-        api-token: ״״ #${vcap.services.wavefront.credentials.api-token}
+        uri: ${vcap.services.wavefront.credentials.uri}
+        api-token: ${vcap.services.wavefront.credentials.api-token}
 
 wavefront:
   application:
     name: todo-application-tas4vms
-  freemium-account: false #change to true if needed...
+  freemium-account: ${vcap.services.wavefront.credentials.fremium}
