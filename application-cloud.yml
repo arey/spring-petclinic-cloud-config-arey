@@ -20,5 +20,5 @@ management:
 
 wavefront:
   application:
-    name: todo-application-tas4vms
+    name: spring-petclinic
   freemium-account: ${vcap.services.wavefront.credentials.fremium}
