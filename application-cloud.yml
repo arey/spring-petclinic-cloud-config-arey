@@ -16,7 +16,7 @@ management:
     export:
       wavefront:
         uri: http://${vcap.services.wavefront.credentials.hostname}:${vcap.services.wavefront.credentials.port}
-        #api-token: ${vcap.services.wavefront.credentials.api-token}
+        api-token: ״״ #${vcap.services.wavefront.credentials.api-token}
 
 wavefront:
   application:
